@@ -19,7 +19,8 @@ class PreviewProvider {
 		$query->execute();
 
 		$row = $query->fetch(PDO::FETCH_ASSOC);
-		echo $row["name"];
+		
+		return new Entity($this->con, $row) 
 	}
 }
 ?>
