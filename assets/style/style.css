@@ -10,6 +10,13 @@ body{
     color:#333;
     box-sizing:border-box;
 }
+
+    .wrapper {
+    min-width:1050px;
+    min-height:100%;
+    background-color: black;
+    }
+
 .signIncontainer {
     background-color: #efefee;
     height: 100vh;
@@ -131,8 +138,19 @@ body{
     height:50px;
     max-height:50px;
     font-size:18px;
-    border-radius=2px;
+    border-radius:2px;
     margin-bottom:15px;
     margin-right:5px;
+    cursor:pointer;
 
 }
+    button i {
+        color:inherit;
+    }
+
+    .mainDeatails button:hover{
+        background-color:white;
+        color:black;
+    }
+
+    

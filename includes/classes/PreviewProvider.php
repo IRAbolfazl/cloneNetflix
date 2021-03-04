@@ -18,8 +18,8 @@ class PreviewProvider {
 		$preview= $entity->getPreview();
 		
 		return "<div class='previewCntainer'>
-				<img src='$thumbnail class='previewImage' hidden>
-				<video autoplay muted class='previewVideo'>
+				<img src='$thumbnail' class='previewImage' hidden>
+				<video autoplay muted class='previewVideo' onended='previewEnded()'>
 					<source src='$preview' type='video/mp4'>
 				</video>
 
@@ -29,8 +29,8 @@ class PreviewProvider {
 							<h3> $name </h3>
 
 							<div class='buttons'>
-								<button>Play</botton>
-								<button>Volume</botton>
+								<button><i class='fas fa-play'></i> Play</botton>
+								<button onclick='volumeToggle(this)'><i class='fas fa-volume-mute'></i></botton>
 							</div>
 	
 						</div>
